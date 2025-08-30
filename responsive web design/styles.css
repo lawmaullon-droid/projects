@@ -1,0 +1,58 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    list-style: 1.4;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(125, 13, 125, 0.647);
+}
+
+.survey-form {
+    background: var(--color-green);
+}
+
+fieldset {
+    border: black 2px solid;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+#title, #description {
+    text-align: center;
+}
+
+label {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+#name, #email, #number, #dropdown {
+    width: 100%;
+    height: 25px;
+}
+
+.subj, .num, .mail, .nme {
+    font-size: 25px;
+}
+
+#feedback {
+    width: 100%;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}

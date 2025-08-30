@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Student Form</title>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <form id="survey-form">
+        <div class="information">
+            <h1 id="title">Student Registration Form</h1>
+            <p id="description" class="description text-center"> Please fill out Form with complete details.</p>
+        <fieldset>
+            <div class="form-group">
+            <label id="name-label" class="nme">Name</label>
+            <input id="name" type="text" name="text" placeholder="Enter Full Name" required>
+            </div>
+            
+            <div class="form-group">
+            <label id="email-label" class="mail">Email</br></label>
+            <input id="email" type="email" name="email" placeholder="Enter Gmail" required>
+            </div>
+            
+            <div class="form-group">
+            <label id="number-label" class="num">Age</br></label>
+            <input id="number" type="number" name="number" min="18" max="100" placeholder="Enter age" required>
+            </div>
+
+            <div class="form-group">
+            <label for="Year_level" class="subj">What year level are you currently enrolled at?</label>
+                <select name="Year-level" id="dropdown">
+                    <option value="1styear">First year BSCS (Bachelor of Science in Computer Science) </option>
+                    <option value="2ndyear">Second year BSCS (Bachelor of Science in Computer Science) </option>
+                    <option value="3rdyear">Third year BSCS (Bachelor of Science in Computer Science) </option>
+                    <option value="4thyear">Fourth year BSCS (Bachelor of Science in Computer Science) </option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+            <p class="subj">Choose your most favourite subject</p>
+            
+            <label for="DSA">
+            <input type="radio" id="DSA" name="fave-lang" value="DSA" required>
+            Data Structure and Algorithms</label>
+            
+            <label for="COSC">
+            <input type="radio" id="COSC" name="fave-lang" value="COSC" required>
+            Discrete Structure</label>
+
+            <label for="OOP">
+            <input type="radio" id="OOP" name="fave-lang" value="OOP" required>
+            Object Oriented Programming</label>
+
+            <label for="FITT">
+            <input type="radio" id="FITT" name="fave-lang" value="FITT" required>
+            PHYSICAL ACTIVITIES TOWARDS HEALTH AND FITNESS</label>
+            </div>
+
+            <div class="form-group">
+                <p class="subj">What profession are you applying for after graduation? (Multiple choices are okay) </p>
+                    <label><input name="prefer" type="checkbox" value="Front-end-developer" class="input-checkbox">Front-end-developer</label><br>
+                    <label><input name="prefer" type="checkbox" value="Back-end-developer" class="input-checkbox">Back-end-developer</label><br>
+                    <label><input name="prefer" type="checkbox" value="Full Stack developer" class="input-checkbox">Full Stack developer</label><br>
+                    <label><input name="prefer" type="checkbox" value="Software Engineer" class="input-checkbox">Software Engineer</label><br>
+                    <label><input name="prefer" type="checkbox" value="App Developer" class="input-checkbox">App Developer</label><br>
+                    <label><input name="prefer" type="checkbox" value="Game Developer" class="input-checkbox">Game Developer</label><br>
+            </div>
+
+            <div class="form-group">
+                <p class="subj"><label for="feedback">What would be your advice for those who also choose the same course?</label></p>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50"> </textarea><br>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </fieldset>
+        </div>
+    </form>
+    </body>
+</html>
