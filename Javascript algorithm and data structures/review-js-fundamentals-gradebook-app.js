@@ -39,3 +39,20 @@ console.log(getGrade(56));
 //The code above is another trickery by JS, must be studied further for future job codes.
 
 // new lines below
+
+function hasPassingGrade(score) {
+  if (score >= 60){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+console.log(hasPassingGrade(100));
+console.log(hasPassingGrade(53));
+console.log(hasPassingGrade(87));
+
+// code above is easy challenge yey!!
+
+// next line below
