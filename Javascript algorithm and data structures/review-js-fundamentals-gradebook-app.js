@@ -61,7 +61,7 @@ function studentMsg(totalScores, studentScore) {
   if (!hasPassingGrade(studentScore)){
     return "Class average: " + getAverage(totalScores) + "." + " Your grade: " + getGrade(studentScore) + "." + " You failed the course."
   } else {
-    "Class average: " + getAverage(totalScores) + "." + " Your grade: " + getGrade(studentScore) + "." + " You passed the course."
+    return "Class average: " + getAverage(totalScores) + "." + " Your grade: " + getGrade(studentScore) + "." + " You passed the course."
   }
 
 }
